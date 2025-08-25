@@ -1,0 +1,292 @@
+# Named ones
+User-agent: 360Spider
+Disallow: /
+
+User-agent: 360Spider-Image
+Disallow: /
+
+User-agent: 360Spider-Video
+Disallow: /
+ 
+User-agent: adidxbot
+Disallow: /
+ 
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider-image
+Disallow: /
+
+User-agent: Baiduspider-news
+Disallow: /
+
+User-agent: Baiduspider-video
+Disallow: /
+ 
+User-agent: BublupBot
+Disallow: /
+ 
+User-agent: CCBot
+Disallow: /
+
+User-agent: Cliqzbot
+Disallow: /
+ 
+User-agent: coccoc
+Disallow: /
+
+User-agent: coccocbot-image
+Disallow: /
+
+User-agent: coccocbot-web
+Disallow: /
+ 
+User-agent: Daumoa
+Disallow: /
+
+User-agent: Dazoobot
+Disallow: /
+ 
+User-agent: DeuSu
+Disallow: /
+
+User-agent: EuripBot
+Disallow: /
+ 
+User-agent: Exploratodo
+Disallow: /
+ 
+User-agent: Facebot
+Disallow: /
+ 
+User-agent: Feedly
+Disallow: /
+ 
+User-agent: Findxbot
+Disallow: /
+ 
+User-agent: gooblog
+Disallow: /
+
+User-agent: HaoSouSpider
+Disallow: /
+ 
+User-agent: ichiro
+Disallow: /
+ 
+User-agent: istellabot
+Disallow: /
+ 
+User-agent: JikeSpider
+Disallow: /
+ 
+User-agent: Lycos
+Disallow: /
+ 
+User-agent: Mail.Ru
+Disallow: /
+ 
+User-agent: MojeekBot
+Disallow: /
+
+User-agent: OrangeBot
+Disallow: /
+ 
+User-agent: Pinterest
+Disallow: /
+
+User-agent: Plukkie
+Disallow: /
+
+User-agent: Qwantify
+Disallow: /
+
+User-agent: Rambler
+Disallow: /
+ 
+User-agent: Rambler
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Sosospider
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: Sogou blog
+Disallow: /
+
+User-agent: Sogou inst spider
+Disallow: /
+
+User-agent: Sogou News Spider
+Disallow: /
+
+User-agent: Sogou Orion spider
+Disallow: /
+
+User-agent: Sogou spider2
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /
+
+User-agent: Sogou blog
+Disallow: /
+
+User-agent: SputnikBot
+Disallow: /
+
+User-agent: Teoma
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: wotbox
+Disallow: /
+ 
+User-agent: yacybot
+Disallow: /
+ 
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexMobileBot
+Disallow: /
+
+user-agent: Yeti
+Disallow: /
+ 
+User-agent: YioopBot
+Disallow: /
+  
+User-agent: yoozBot
+Disallow: /
+ 
+User-agent: YoudaoBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+‍User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+ 
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-Agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+ 
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+  
+# bing Microsoft
+User-agent: msnbot-media
+Disallow: /
+
+User-agent: msnbot
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: BingPreview
+Disallow: /
+
+   
+# google
+User-agent: Mediapartners-Google
+Disallow: /
+ 
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /
+ 
+User-agent: AdsBot-Google-Mobile-Apps
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Mobile
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+
+# duckduckgo
+User-agent: DuckDuckBot
+Disallow: /
+Allow: index.html
+Allow: /DE/index.html
+
+User-agent: DuckDuckGo-Favicons-Bot
+Disallow: /
+
+
+User-agent: Googlebot
+Disallow: /
+Allow: index.html
+Allow: /DE/index.html
+
+# apple
+User-agent: Applebot
+Disallow: /
+Allow: index.html
+Allow: /DE/index.html
+
+user-agent: AppleNewsBot
+Disallow: /
+Allow: index.html
+Allow: /DE/index.html
+
+
+
+# All non named bots
+User-agent: *
+Disallow: /
+
