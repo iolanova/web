@@ -1,1 +1,695 @@
-
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="light">
+    <head>
+        <title>iolanova</title>
+        <link rel="icon" type="image/png" href="../img/IolanovaLogo.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+                <meta charset="utf-8">
+                    <meta name="robots" content="nofollow, noimageindex">
+                    <meta name="robots" content="max-image-preview:none">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta name="keywords" content="Wirtschaft, Wirkungskette, Lernen, Quiz">
+                    <meta name="copyright" content="copyright 2025 Iolanova-Team">
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                            <script src="../JsHelper.js"></script>
+                            <link rel="stylesheet" type="text/css" href="../myDesign.css">
+                                
+                            </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <nav class="navbar navbar-expand-sm py-0 bg-secondary-subtle fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-1" href="index.html">
+                    <h1><img src="../img/IolanovaLogo.png" alt="Iolanova Logo" width="45" height="45" class="d-inline-block align-text-top"></h1></a>
+                <a class="navbar-brand mx-1" href="index.html">
+                    <h1><span>iolanova</span></h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle " href="#" role="button"  data-bs-toggle="dropdown">Apps</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#CauseffEcon">CauseffEcon</a></li>
+                                <li><a class="dropdown-item" href="#JamCalculator">Jam Cooking Calculator</a></li>
+                                <li><a class="dropdown-item" href="#BakingStudio">Baking Studio</a></li>
+                                <li><a class="dropdown-item" href="#HerbVetch">HerbVetch</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="CreativeES.html">Creativo</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">iolanova Team</a>
+                        </li>
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle " href="#" role="button"  data-bs-toggle="dropdown">Idioma</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html">Inglés</a></li>
+                                <li><a class="dropdown-item" href="../DE/index.html">Alemán</a></li>
+                                <li><a class="dropdown-item" href="index.html">Español</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-auto my-auto">
+                            <div class="form-check form-switch my-auto ps-5 pe-2">
+                                <input class="form-check-input" type="checkbox" role="switch" id="MyColorSwitch">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="col-sm-9 p-1" id="CauseffEcon">
+        </div>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-4">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Nosotros, el equipo de iolanova</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>
+                        Como amigos y como equipo, tenemos el sueño de compartir nuestras pasiones con otros a través de proyectos como el desarrollo de aplicaciones.
+                        </p>
+                        <p>
+                        Hay muchas cosas que nos motivan a desarrollar aplicaciones:
+                        <br>
+                        - ¡Disfrutamos del proceso y del resultado!
+                        <br>
+                        - ¡Queremos ofrecer a los usuarios un diseño atractivo!
+                        <br>
+                        - ¡Nos encanta recibir comentarios visuales interesantes durante el uso!
+                        <br>
+                        - Queremos transmitir experiencias y vivencias en los ámbitos correspondientes.
+                        <br>
+                        - Nos encanta diseñar todos los pasos, desde la idea hasta el proyecto terminado, y no ser solo una «rueda más del engranaje».
+                        </p>
+                        <p>
+                        Por interés y con la esperanza de entusiasmar a muchos con nuestros proyectos, queremos seguir desarrollándonos a nosotros mismos y no solo las aplicaciones en el futuro.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App 1 - CauseffEcon -->
+        <div class="container-fluid ps-5 pe-5 py-2" style="margin-top:80px">
+            <div class="row">
+                <div class="col-sm-3 text-center" >
+                    
+                    <div id="carousel" class="carousel slide">
+                      <!-- Indicators/dots -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                      </div>
+                      <!-- The slideshow/carousel -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/CauseffEcon.png" alt="CauseffEconIcon">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/CEE_SC_01DE65.jpg" alt="CauseffEconIcon">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/CEE_SC_02EN65.jpg" alt="CauseffEconIcon">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/CEE_SC_08EN65.jpg" alt="CauseffEconIcon">
+                        </div>
+                      </div>
+                      <!-- Left and right controls/icons -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                        <a href="https://apps.apple.com/de/app/causeffecon/id6749869063"><img class="img-fluid align-center py-3" src="../img/blackDE.svg" alt="AppStore"></a>
+                </div>
+                <div class="col-sm-9" >
+                    <h3>¡Master the Power of CauseffEcon!</h3>
+                    <p>¡Descubre los secretos de la economía con CauseffEcon, ¡tu mejor compañero de aprendizaje! </p>
+                    <p>
+                    Descubre la causa y el efecto y profundiza tu comprensión de los acontecimientos económicos.
+                    Establece tus objetivos de aprendizaje y sigue tu progreso.
+                    </p>
+                    
+                    <!-- Karteikarten CauseffEcon-->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active text-muted" data-bs-toggle="tab" href="#CauseffEcon1">¿Por qué?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#CauseffEcon2">¿Para quién?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#CauseffEcon3">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#CauseffEcon4">¿Qué hay de nuevo?</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="CauseffEcon1" class="container tab-pane active">
+                            <br>
+                            <p>
+                            La economía nos rodea. Un cambio aparentemente sencillo en la política gubernamental o las fluctuaciones en el comercio internacional pueden tener consecuencias de gran alcance que afectan a los consumidores, las empresas y economías enteras. Desde las transacciones diarias hasta los acontecimientos financieros mundiales, es importante comprender la compleja red de causas y efectos.
+                            </p>
+                            <p>
+                            ¿Listo?
+                            </p>
+                            <p>
+                            Si estás listo para explorar el fascinante mundo de la economía, CauseffEcon es perfecto para ti. Sin recopilación de datos de usuario, sin enlaces a terceros, sin publicidad, sin costes: simplemente juega.
+                            Descarga la aplicación en la App Store y comienza tu viaje a lo largo de las cadenas de impacto económico con CauseffEcon: ¡tu yo futuro te lo agradecerá!
+                            </p>
+                        </div>
+                        <div id="CauseffEcon2" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            No importa si eres estudiante y tienes exámenes, si estás ampliando tu formación profesional o si simplemente sientes curiosidad por saber cómo funciona el mundo de la economía: CauseffEcon te permite entrenar tu comprensión del mundo interconectado de la economía.
+                            </p>
+                            <p>
+                            Estudiantes y alumnos: esta aplicación te ayuda a prepararte para el bachillerato, seminarios o exámenes. Agudiza tus habilidades de pensamiento causal y entrena una comprensión diferenciada de los procesos económicos.
+                            <br>
+                            A medida que avances por los temas y niveles, te darás cuenta de que tus respuestas van más allá de los conceptos básicos. Empezarás a pensar de forma crítica sobre los mecanismos subyacentes que impulsan los acontecimientos económicos. Con cada cuestionario superado, mejorarás tu capacidad para prever consecuencias, comprender el comportamiento del mercado y relacionar fenómenos económicos entre sí.
+                            </p>
+                            <p>
+                            Economistas y directivos: más allá de la formación, CauseffEcon resulta interesante para todos aquellos que se interesan por la economía. Pensar en cadenas de efectos ayuda a los empresarios y directivos a comprender mejor cómo las fuerzas económicas influyen en los mercados. Si, por ejemplo, prevés una recesión, debes ser consciente de cómo afectará esto a tu sector y a tu empresa, y qué consecuencias puede tener para el futuro.
+                            </p>
+                        </div>
+                        <div id="CauseffEcon3" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            ¡Aprende a tu propio ritmo!
+                            <br>
+                            Nadie te evalúa. CauseffEcon ha sido diseñado para ofrecer un entorno de aprendizaje dinámico y atractivo:
+                            - Establece tus objetivos y adapta el nivel de dificultad a tus habilidades.
+                            - Elige la proporción de respuestas correctas e incorrectas para desafiarte sin sobrepasarte.
+                            - Decide si quieres jugar en «modo entrenamiento» para practicar de forma continua o en «modo examen» para tener una experiencia similar a la de un examen.
+                            </p>
+                            <p>
+                            Elige el nivel:
+                            </p>
+                            <p>
+                            1. Nivel principiante: ideal para principiantes. Aquí aprenderás los fundamentos de las ciencias económicas, entre ellos:
+                            <br>
+                            - Sistemas económicos
+                            <br>
+                            - Política de precios
+                            <br>
+                            - Fallo del mercado
+                            <br>
+                            - …
+                            </p>
+                            <p>
+                            2. Nivel profesional: para todos aquellos que deseen profundizar en temas más avanzados, por ejemplo:
+                            <br>
+                            - Crecimiento económico y empleo
+                            <br>
+                            - Política económica orientada a la demanda y la oferta
+                            <br>
+                            - Balanza comercial exterior y cuestiones medioambientales
+                            <br>
+                            - …
+                            </p>
+                            <p>
+                            3. Nivel experto: pon a prueba tus conocimientos con acontecimientos económicos reales a escala mundial. Aquí se analizan casos concretos y sus repercusiones, que muestran la complejidad de la economía en la práctica. Elige entre temas como:
+                            <br>
+                            - Informe del Banco Mundial 2024
+                            <br>
+                            - Crisis financiera y económica de 2008/09
+                            <br>
+                            - Repercusiones de la desglobalización tras la COVID-19
+                            <br>
+                            - ...
+                            </p>
+                            <p>
+                            ¡Ayuda con el contenido!
+                            <br>
+                            Si no consigues avanzar, recurre a una ayuda contextual detallada que explique los fundamentos y los antecedentes desde el punto de vista económico. De este modo, te asegurarás de no limitarte a memorizar respuestas, sino de comprender los contextos.
+                            <br>
+                            Sigue tu progreso y celebra los objetivos alcanzados: la motivación es clave para el aprendizaje a largo plazo. Por eso, CauseffEcon ofrece funciones que te permiten seguir tu progreso..
+                            </p>
+                            <p>
+                            ¡Observa cómo crece tu conocimiento
+                            </p>
+                        </div>
+                        
+                        <div id="CauseffEcon4" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            Versión 1.0.2
+                            <br>
+                            Pequeñas mejoras en detalles y correcciones de errores.
+                            </p>
+                            <p>
+                            Versión 1.1.0
+                            <br>
+                            Se ha añadido una nueva función para mostrar la cadena de efectos.
+                            Se ha actualizado el diseño de Liquid Glass a iOS26.
+                            También hemos realizado pequeñas mejoras en los detalles y correcciones de errores.
+                            </p>
+                            <p>
+                            Versión 1.1.1
+                            <br>
+                            Se han añadido eventos económicos reales adicionales al nivel experto, como la Directiva europea sobre la cadena de suministro, lo que permite crear cientos de nuevas cadenas de causa y efecto realistas.
+                            También hemos realizado pequeñas mejoras internas, corregido errores y añadido nuevas imágenes cómicas para ofrecer una experiencia de juego más agradable.
+                            </p>
+                            <p>
+                            Si desea apoyarnos, ¡le agradeceríamos mucho que dejara una reseña en la App Store!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App 2 - JamCalculator -->
+        <div class="col-sm-9 p-1" id="JamCalculator">
+        </div>
+        
+        <div class="container-fluid ps-5 pe-5 py-2"  style="margin-top:80px">
+            <div class="row">
+                <div class="col-sm-3 text-center" >
+                    
+                    <div id="carousel1" class="carousel slide">
+                      <!-- Indicators/dots -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"></button>
+                      </div>
+                      <!-- The slideshow/carousel -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/JamJellyCalc.png" alt="JamCalculatorIcon">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/JJC_SC_01ES69.jpg" alt="JamCalculatorIcon">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/JJC_SC_02ES69.jpg" alt="JamCalculatorIcon">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-5 pb-2" src="../img/JJC_SC_04ES69.jpg" alt="JamCalculatorIcon">
+                        </div>
+                      </div>
+                      <!-- Left and right controls/icons -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                    
+                    <a href="https://apps.apple.com/de/app/causeffecon/id6749869063"><img class="img-fluid align-center py-3" src="../img/blackDE.svg" alt="AppStore"></a>
+                </div>
+                
+                <div class="col-sm-9" >
+                    <h3>¡Jam Cooking Calculator: tu asistente para hacer mermeladas!</h3>
+                    <p>¡La forma más fácil de preparar mermelada! Jam Calculator calcula los ingredientes, los tarros y las cantidades. ¿Pequeñas cantidades o sobras? ¡Sin cálculos, sin estrés!
+                    </p>
+                    <p>
+                    Jam Calculator es tu ayudante todoterreno para elaborar mermeladas de forma sencilla y precisa sin desperdiciar nada. Tanto si quieres conservar tu cosecha de verano como si deseas aprovechar la fruta demasiado madura, la calculadora de mermeladas te muestra de forma inmediata y precisa lo que necesitas. ¡Perfecto, incluso si solo quieres un tarro de mermelada dulce!
+                    </p>
+                    <p>
+                    Descargue ahora la calculadora de mermeladas y convierta su cocina en una fábrica de mermeladas, sin desperdicios, con un sabor perfecto y tarros deliciosamente llenos.
+                    </p>
+                    <p>
+                    <a href="CreativeES.html#Jam">¡Echa un vistazo a unas de nuestras recetas favoritas!</a>
+                    </p>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active text-muted" data-bs-toggle="tab" href="#JamCalculator1">¿Por qué?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#JamCalculator2">¿Para quién?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#JamCalculator3">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#JamCalculator4">¿Qué hay de nuevo?</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="JamCalculator1" class="container tab-pane active">
+                            <br>
+                            <p>
+                            ¿Por qué una aplicación Jam Calculator?
+                            </p>
+                            <p>
+                            Di adiós a las conjeturas: ¡hacer mermelada en casa no debería ser complicado, sino divertido! Pero entre calcular las proporciones de azúcar, las cantidades de gelificante y los tamaños de los tarros, incluso los expertos en cálculo mental pueden acabar confundidos.
+                            </p>
+                            <p>
+                            Con Jam Calculator, calcular las cantidades es tan fácil como recoger fruta madura. Ya sea mermelada de fresa para la familia o mermelada de albaricoque para el invierno, Jam Calculator se encarga de los cálculos para que tú puedas concentrarte en el sabor. ¡Se acabaron las notas garabateadas y los dedos pegajosos en las calculadoras!
+                            </p>
+                            <p>
+                            Jam Calculator calcula automáticamente las cantidades ideales para:
+                            <br>
+                            • Fruta
+                            <br>
+                            • Azúcar gelificante o azúcar normal
+                            <br>
+                            • Gelificante (pectina, azúcar gelificante, etc.)
+                            <br>
+                            • Tarros necesarios
+                            </p>
+                            <p>
+                            Solo tienes que introducir la cantidad de fruta deseada o, alternativamente, la cantidad de azúcar gelificante o gelificante, y Jam Calculator te indicará lo que necesitas. Jam Calculator admite diferentes proporciones para mermeladas bajas en azúcar o recetas tradicionales.
+                            </p>
+                            <p>
+                            Diseñado para cocinas reales: desde ciruelas hasta cerezas ácidas, pasando por uvas y naranjas, independientemente del tipo de fruta, Jam Calculator garantiza que no se desperdicie nada y que se llene cada tarro, ya sea uno o muchos.
+                            </p>
+                        </div>
+                        <div id="JamCalculator2" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            ¿Para quién es ideal esta aplicación?
+                            </p>
+                            <p>
+                            Para quienes quieren evitar los desperdicios: ¿Nunca más querrás tirar la última bandeja de bayas o pensar qué hacer con un paquete abierto de azúcar gelificante?
+                            <br>
+                            Solo tienes que introducir la cantidad restante y te mostraremos lo que tienes que añadir.
+                            </p>
+                            <p>
+                            Para los amantes de las reservas: ¿grandes cantidades o muchos tarros? Con Jam Calculator no hay ningún problema. La aplicación para mermeladas calcula exactamente cuántos tarros necesitas para cada cantidad, basándose en el tamaño de tarro que elijas (de 30 ml a 500 ml) y en los datos que introduzcas. La cantidad total se calcula directamente y se muestran los tarros que necesitas.
+                            </p>
+                            <p>
+                            Para los amantes de la variedad: ¿quieres probar diferentes sabores con tu paquete de azúcar o preparar solo una pequeña cantidad para probar?
+                            La calculadora de mermelada calcula la mezcla adecuada. Sencillo, rápido y muy fácil.
+                            </p>
+                            <p>
+                            Ideal para:
+                            <br>
+                            • Niños que quieren aprender a hacer mermelada con sus padres.
+                            <br>
+                            • Aficionados experimentados a la elaboración de conservas que quieren acelerar el proceso.
+                            <br>
+                            • Jardineros que quieren conservar sus frutas de temporada, incluso cuando la cosecha es irregular.
+                            <br>
+                            • Cocineros aficionados y hogares que odian el desperdicio y aman el sabor.
+                            </p>
+                        </div>
+                        <div id="JamCalculator3" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            Features:
+                            <br>
+                            • Interfaz de usuario intuitiva: no se requieren conocimientos especiales.
+                            <br>
+                            • Entrada de texto o control deslizante, elige lo que prefieras.
+                            <br>
+                            • Selección sencilla mediante botones de la proporción de gelificación de 1:1 a 4:1, incluso después de indicar la cantidad.
+                            <br>
+                            • Cambio sencillo entre la introducción de fruta o azúcar gelificante, cambio sencillo entre azúcar gelificante y gelificante/pectina.
+                            <br>
+                            • Añade líquidos (vino, agua, etc.) y el cálculo se ajusta automáticamente.
+                            <br>
+                            • Gran pantalla de resultados para que puedas verlo todo de un vistazo, incluso si estás ocupado cocinando.
+                            <br>
+                            • Modo oscuro y claro.
+                            <br>
+                            • Se pueden configurar diferentes idiomas: alemán, inglés, espñol.
+                            <br>
+                            • Fácil y rápido, sin menús complicados.
+                            <br>
+                            • Funciona incluso sin conexión a Internet.
+                            <br>
+                            • No es necesario registrarse ni introducir datos personales.
+                            </p>
+                        </div>
+                        <div id="JamCalculator4" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            Version 1.1.0
+                            <br>
+                            Hemos añadido el español a la lista de idiomas disponibles.
+                            </p>
+                            <p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App 3 - BakingStudio -->
+        <div class="col-sm-9 p-1" id="BakingStudio">
+        </div>
+        
+        <div class="container-fluid ps-5 pe-5 py-2" style="margin-top:80px">
+            <div class="row">
+                <div class="col-sm-3 text-center" >
+                    
+                    <div id="carousel2" class="carousel slide">
+                      <!-- Indicators/dots -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"></button>
+                      </div>
+                      <!-- The slideshow/carousel -->
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="img-fluid rounded-5 pb-2" src="../img/BakingStudioIconD.png" alt="BakingStudioIconD">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="img-fluid rounded-5 pb-2" src="../img/BS_SCPhoneEN_01.jpg" alt="BakingStudioIconD">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="img-fluid rounded-5 pb-2" src="../img/BS_SCPhoneEN_02.jpg" alt="BakingStudioIconD">
+                          </div>
+                          <div class="carousel-item">
+                              <img class="img-fluid rounded-5 pb-2" src="../img/BS_SCPhoneEN_06.jpg" alt="BakingStudioIconD">
+                          </div>
+                      </div>
+                      <!-- Left and right controls/icons -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                    <a href="https://apps.apple.com/de/app/baking-studio/id6756027503"><img class="img-fluid align-center py-3" src="../img/blackDE.svg" alt="AppStore"></a>
+                </div>
+                
+                <div class="col-sm-9" >
+                    <h3>Baking Studio: crea tus propias recetas de galletas</h3>
+                    <p>
+                    Descubre Baking Studio, la intuitiva aplicación de repostería con la que podrás crear recetas personalizadas, evitar desperdiciar alimentos y hornear sin esfuerzo gracias a sus instrucciones paso a paso.
+                    </p>
+                    <p>
+                    Descubre Baking Studio, una aplicación que te ayuda a desarrollar tu propio estilo de repostería: mezcla sabores, adapta los ingredientes y haz que cada receta sea única. Crea recetas personalizadas, descubre combinaciones casi infinitas y déjate inspirar por tus propias ideas, que te guiarán paso a paso hacia la elaboración de deliciosas galletas.
+                    </p>
+                    <p>
+                    Crea recetas totalmente nuevas. Desarrolla, optimiza y perfecciona tus creaciones según tus gustos y con tus ingredientes favoritos. Descubre todas las posibilidades y encuentra nuevas combinaciones. Utiliza las bases probadas y la información de fondo, los consejos y trucos proporcionados para personalizar aún más las recetas. Con Baking Studio no solo sigues instrucciones, sino que te inspiras y amplías tus horizontes gustativos con nuevas combinaciones de ingredientes.
+                    </p>
+                    <p>
+                    <a href="CreativeES.html#Baking">¡Mira aquí unas creaciones propias!</a>
+                    </p>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#BakingStudio1">¿Por qué?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#BakingStudio2">¿Para quién?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#BakingStudio3">Features</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="BakingStudio1" class="container tab-pane active">
+                            <br>
+                            <p>
+                            ¿Por qué una aplicación Baking Studio?
+                            </p>
+                            <p>
+                            La aplicación Baking Studio aporta estructura, creatividad y confianza a una actividad que a mucha gente le encanta, pero que a menudo le resulta difícil. Ofrece a los usuarios un espacio en el que pueden experimentar y desarrollarse sin presión, combinando la orientación con la creatividad de una forma que los libros de repostería tradicionales no pueden igualar.
+                            <br>
+                            Con ingredientes personalizables, instrucciones paso a paso y un temporizador integrado, la aplicación Baking Studio te permite hornear con confianza, descubrir tu estilo personal y disfrutar del proceso de principio a fin.
+                            </p>
+                        </div>
+                        <div id="BakingStudio2" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            ¿Para quién es ideal esta aplicación?
+                            </p>
+                            <p>
+                            • Padres que desean hornear con sus hijos de una manera divertida y creativa.
+                            <br>
+                            • Panaderos aficionados que desean probar nuevas combinaciones que vayan más allá de las estrictas especificaciones de las recetas, sin alejarse demasiado de las combinaciones básicas esenciales.
+                            <br>
+                            • Panaderos creativos a los que les gusta experimentar y desarrollar sus propias recetas.
+                            <br>
+                            • Principiantes a los que les gusta desenvolverse dentro de un «marco» para no sentirse abrumados.
+                            <br>
+                            • Personas que desean evitar el desperdicio de alimentos y buscan sugerencias inteligentes para utilizar de manera eficiente los ingredientes sobrantes.
+                            <br>
+                            • Los coleccionistas de provisiones, que mantienen sus despensas bien surtidas y buscan ideas para recetas basadas en los ingredientes que ya tienen.
+                            <br>
+                            • Personas muy ocupadas que, además de combinaciones creativas, valoran herramientas como temporizadores e instrucciones paso a paso.
+                            <br>
+                            • Los amantes de la buena mesa que buscan una forma divertida e inspiradora de mejorar sus habilidades culinarias y que se atreven a probar recetas experimentales.
+                            <br>
+                            • Creadores de contenido o reposteros aficionados que desean documentar y mejorar sus habilidades reposteras.
+                            </p>
+                            <p>
+                            En resumen, es perfecto para todos aquellos que desean hornear con más confianza, creatividad e imaginación.
+                            </p>
+                        </div>
+                        <div id="BakingStudio3" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            Features:
+                            <br>
+                            • Interfaz de usuario intuitiva: no se requieren conocimientos especiales.
+                            <br>
+                            • Generador modular de recetas: combina, mezcla y une ingredientes para hornear y crea tus propias recetas favoritas.
+                            <br>
+                            • Instrucciones sencillas paso a paso para hornear
+                            <br>
+                            • Asistencia inteligente para hornear: temporizador integrado, conversor de unidades.
+                            <br>
+                            • Perfecto para quienes no les gustan las sobras y les gusta almacenar provisiones: mira qué ingredientes tienes en la despensa y adapta las recetas en consecuencia.
+                            <br>
+                            • Recetario digital: guarda tus recetas con fotos, notas y marca tus favoritas.
+                            <br>
+                            • Comparte tus creaciones con tus amigos en formato PDF.
+                            <br>
+                            • Modo oscuro y luz
+                            <br>
+                            • Se pueden configurar diferentes idiomas: alemán, inglés.
+                            <br>
+                            • Fácil y rápido, sin menús complicados.
+                            <br>
+                            • Funciona incluso sin conexión a Internet.
+                            <br>
+                            • No es necesario registrarse ni introducir tus datos personales.
+                            </p>
+                            <p>
+                            Hornea con confianza. Hornea con creatividad. Hornea con Baking Studio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App 4 - HerbVetch -->
+        <div class="col-sm-9 p-1" id="HerbVetch"  style="margin-top:80px">
+        </div>
+        
+        <div class="container-fluid ps-5 pe-5 py-2">
+            <div class="row">
+                <div class="col-sm-3" >
+                    <img class="img-fluid rounded-5 pb-2" src="../img/HerbVetch.png" alt="HerbVetchIcon">
+                </div>
+                <div class="col-sm-9" >
+                    <h3>¡Deliciosa cocina con HerbVetch!</h3>
+                    <p>Comming soon ... or never ;)</p>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active text-muted" data-bs-toggle="tab" href="#HerbVetch1">¿Por qué?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#HerbVetch2">¿Para quién?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" data-bs-toggle="tab" href="#HerbVetch3">Features</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="HerbVetch1" class="container tab-pane active">
+                            <br>
+                            <p>
+                            Ya sea el aromático tomillo, la especiada nuez moscada o el terroso azafrán, cada cocina del mundo tiene sus propias especias características. Al cocinar, guisar o rehogar, despliegan todo su potencial y se combinan con la carne, las verduras o las legumbres para crear una experiencia gustativa armoniosa.
+                            </p>
+                            <p>
+                            Incluso unos simples fideos se convierten en un plato mediterráneo excepcional si se saltean con mantequilla y salvia. Las hierbas frescas, como la albahaca o la menta, aportan frescura y color a tu plato.
+                            </p>
+                            <p>
+                            Quienes disfrutan cocinando saben que las hierbas y especias hacen que sus platos sean únicos. En la cocina, son ese toque especial que resalta los aromas, aporta profundidad y seduce nuestro sentido del gusto.
+                            </p>
+                            <p>
+                            Si se combinan correctamente, se crean obras maestras culinarias llenas de sabor, variedad y pasión. Pero, ¿qué combina bien con qué? ¿Cómo puedo combinarlos?
+                            </p>
+                        </div>
+                        <div id="HerbVetch2" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            ¡Para todos los amantes de la comida casera!
+                            </p>
+                        </div>
+                        <div id="HerbVetch3" class="container tab-pane fade">
+                            <br>
+                            <p>
+                            Comming soon ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-9 p-1" style="margin-bottom:100px">
+        </div>
+        
+        <!-- Footer -->
+            <footer class="py-0 my-0 fixed-bottom bg-secondary-subtle border-top">
+                <ul class="nav justify-content-center pb-0 mb-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button"  data-bs-toggle="dropdown"><i class="bi bi-sunrise-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sunrise-fill" viewBox="0 0 16 16">
+                            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708L8.5 2.707V4.5a.5.5 0 0 1-1 0V2.707l-.646.647a.5.5 0 1 1-.708-.708zM2.343 4.343a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707m11.314 0a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0M11.709 11.5a4 4 0 1 0-7.418 0H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10m13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                          </svg></a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a href="SupportCauseffEconES.html" class="nav-link px-2 px-md-4 py-2">CauseffEcon Support</a></li>
+                            <li><a href="SupportJamCalculatorES.html" class="nav-link px-2 px-md-4 py-2">Jam Cooking Calculator Support</a></li>
+                            <li><a href="SupportBakingStudioES.html" class="nav-link px-2 px-md-4 py-2">Baking Studio Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:iolanovateam@gmail.com?subject=Feedback" class="nav-link px-2 px-md-4 py-2"><small>Contacto</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="NoticeES.html#Aviso" class="nav-link px-2 px-md-4 py-2"><small>Aviso legal</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="NoticeES.html#Proteccion" class="nav-link px-2 px-md-4 py-2"><small>Protección de datos</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="NoticeES.html#DerechoAutor" class="nav-link px-2 px-md-4 py-2"><small>©2025</small></a>
+                    </li>
+                </ul>
+            </footer>
+        
+    </body>
+</html>

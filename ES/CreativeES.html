@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <title>iolanova</title>
+        <link rel="icon" type="image/png" href="../img/IolanovaLogo.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+                <meta charset="utf-8">
+                    <meta name="robots" content="nofollow, noimageindex">
+                        <meta name="robots" content="max-image-preview:none">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <meta name="keywords" content="Wirtschaft, Wirkungskette, Lernen, Quiz">
+                                    <meta name="copyright" content="copyright 2025 Iolanova-Team">
+                                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+                                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                                            <script src="../JsHelper.js"></script>
+                                            <link rel="stylesheet" type="text/css" href="../myDesign.css">
+                                                <style>
+                                                    .bg-custom {
+                                                        position: relative;
+                                                        height: 100vh;
+                                                        display: flex;
+                                                        background-image: url('../img/Parallax_Biene.jpg');
+                                                        background-size: cover;
+                                                        background-position: center
+                                                        overflow: hidden;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+                                                    
+                                                    .frosted-glass {
+                                                        background: rgba(255, 255, 255, 0.1);
+                                                        backdrop-filter: blur(20px); /* Frosted glass effect */
+                                                        border-radius: 12px;
+                                                        padding: 5px;
+                                                        text-align: center;
+                                                        color: #fff;
+                                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                        border: 2px solid rgba(255, 255, 255, 0.4);
+                                                    }
+                                                    
+                                                    /* Mobile View */
+                                                    @media (max-width: 768px) {
+                                                        .bg-custom {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneM.jpg');
+                                                             }
+                                                    }
+                                                    
+                                                    @media (max-width: 600px) {
+                                                        .bg-custom {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneSM.jpg');
+                                                             }
+                                                    }
+                                                    
+                                                    @media (max-width: 480px) {
+                                                        .bg-custom {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneXS.jpg');
+                                                             }
+                                                    }
+                                                </style>
+                                            </head>
+    
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <nav class="navbar navbar-expand-sm py-0 bg-secondary-subtle fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-1" href="index.html">
+                    <h1><img src="../img/IolanovaLogo.png" alt="Iolanova Logo" width="45" height="45" class="d-inline-block align-text-top"></h1></a>
+                <a class="navbar-brand mx-1" href="index.html">
+                    <h1><span>iolanova</span></h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle " href="#" role="button"  data-bs-toggle="dropdown">Apps</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#CauseffEcon">CauseffEcon</a></li>
+                                <li><a class="dropdown-item" href="index.html#JamCalculator">JamCalculator</a></li>
+                                <li><a class="dropdown-item" href="index.html#BakingStudio">Baking Studio</a></li>
+                                <li><a class="dropdown-item" href="index.html#HerbVetch">HerbVetch</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#title">Creativo</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">iolanova Team</a>
+                        </li>
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle " href="#" role="button"  data-bs-toggle="dropdown">Idioma</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../CreativeEN.html">Inglés</a></li>
+                                <li><a class="dropdown-item" href="../DE/CreativeDE.html">Alemán</a></li>
+                                <li><a class="dropdown-item" href="CreativeES.html">Español</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-auto my-auto">
+                            <div class="form-check form-switch my-auto ps-5 pe-2">
+                                <input class="form-check-input" type="checkbox" role="switch" id="MyColorSwitch">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="col-sm-9 p-1" style="margin-top:50px" id="title">
+        </div>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-4">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Nosotros, el equipo de iolanova</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>
+                        Como amigos y como equipo, tenemos el sueño de compartir nuestras pasiones con otros a través de proyectos como el desarrollo de aplicaciones.
+                        </p>
+                        <p>
+                        Hay muchas cosas que nos motivan a desarrollar aplicaciones:
+                        <br>
+                        - ¡Disfrutamos del proceso y del resultado!
+                        <br>
+                        - ¡Queremos ofrecer a los usuarios un diseño atractivo!
+                        <br>
+                        - ¡Nos encanta recibir comentarios visuales interesantes durante el uso!
+                        <br>
+                        - Queremos transmitir experiencias y vivencias en los ámbitos correspondientes.
+                        <br>
+                        - Nos encanta diseñar todos los pasos, desde la idea hasta el proyecto terminado, y no ser solo una «rueda más del engranaje».
+                        </p>
+                        <p>
+                        Por interés y con la esperanza de entusiasmar a muchos con nuestros proyectos, queremos seguir desarrollándonos a nosotros mismos y no solo las aplicaciones en el futuro.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Text -->
+        <div class="container-fluid bg-custom">
+          <div class="card frosted-glass position-absolute bottom-0 end-0 mx-3" style="width: 18rem; margin-bottom: 80px">
+            <div class="card-body text-end" >
+                <h5 class="card-title">Proyectos</h5>
+                <p class="card-text">
+                <p>
+                Esta página está en construcción y se va actualizando constantemente con nuevos contenidos. De momento no hay mucho que ver, pero vuelve a visitarla más adelante ...
+                </p>
+                <p>
+                ¡Sigue siendo emocionante!
+                </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="py-0 my-0 fixed-bottom bg-secondary-subtle border-top">
+            <ul class="nav justify-content-center pb-0 mb-0">
+                <li class="nav-item">
+                    <a href="mailto:iolanovateam@gmail.com?subject=Feedback" class="nav-link px-2 px-md-4 py-2"><small>Contacto</small></a>
+                </li>
+                <li class="nav-item">
+                    <a href="NoticeES.html#Aviso" class="nav-link px-2 px-md-4 py-2"><small>Aviso legal</small></a>
+                </li>
+                <li class="nav-item">
+                    <a href="NoticeES.html#Proteccion" class="nav-link px-2 px-md-4 py-2"><small>Protección de datos</small></a>
+                </li>
+                <li class="nav-item">
+                    <a href="NoticeES.html#DerechoAutor" class="nav-link px-2 px-md-4 py-2"><small>©2025</small></a>
+                </li>
+            </ul>
+        </footer>
+        
+    </body>
+</html>
