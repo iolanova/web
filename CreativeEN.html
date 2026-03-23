@@ -72,19 +72,23 @@
                                                 }
                                                 
                                                 .parallax4 {
-                                                    background-attachment: fixed;
-                                                    background-size: cover;
-                                                    background-position: center;
-                                                    position: relative;
+                                                  position: relative;
+                                                  height: 100vh;
+                                                  overflow: hidden;
+                                                  background-attachment: fixed;
                                                 }
-                                                
-                                                @supports (-webkit-touch-callout: none) {
-                                                  /* iOS only */
-                                                  .parallax4 {
-                                                    background-attachment: scroll;
-                                                  }
+
+                                                .bg-video {
+                                                  position: absolute;
+                                                  top: 50%;
+                                                  left: 50%;
+                                                  min-width: 100%;
+                                                  min-height: 100%;
+                                                  transform: translate(-50%, -50%);
+                                                  object-fit: cover;
+                                                  z-index: -1;
                                                 }
-                                                
+                                                                                                
                                                 @media (min-width: 1200px) {
                                                   .parallax1 {
                                                       height: 80vh;
@@ -92,10 +96,8 @@
                                                   } .parallax2 {
                                                       height: 100vh;
                                                       background-image: url('img/Parallax_Biene.jpg');
-                                                  } .parallax4 {
-                                                      height: 100vh;
-                                                      background-image: url('img/AmsterdamCanalhouse.mp4');
-                                                  } .parallax-img {
+                                                  }
+                                                  .parallax-img {
                                                       height: 100vh;
                                                       background-image: url('img/Parallax_Nektaraffenland.jpg');
                                                   }
@@ -110,11 +112,6 @@
                                                     .parallax2 {
                                                         height: 90vh;
                                                         background-image: url('img/Parallax_BieneM.jpg');
-                                                        background-attachment: scroll;
-                                                    }
-                                                    .parallax4 {
-                                                        height: 70vh;
-                                                        background-image: url('img/AmsterdamCanalhouseSM.mp4');
                                                         background-attachment: scroll;
                                                     }
                                                     .parallax-img{
@@ -134,11 +131,6 @@
                                                         background-image: url('img/Parallax_BieneM.jpg');
                                                         background-attachment: scroll;
                                                     }
-                                                    .parallax4 {
-                                                        height: 70vh;
-                                                        background-image: url('img/AmsterdamCanalhouseSM.mp4');
-                                                        background-attachment: scroll;
-                                                    }
                                                     .parallax-img{
                                                         height: 70vh;
                                                         background-image: url('img/Parallax_NektaraffenlandM.jpg');
@@ -156,11 +148,6 @@
                                                         background-image: url('img/Parallax_BieneSM.jpg');
                                                         background-attachment: scroll;
                                                     }
-                                                    .parallax4 {
-                                                        height: 70vh;
-                                                        background-image: url('img/AmsterdamCanalhouseSM.mp4');
-                                                        background-attachment: scroll;
-                                                    }
                                                     .parallax-img{
                                                         height: 70vh;
                                                         background-image: url('img/Parallax_NektaraffenlandSM.jpg');
@@ -176,11 +163,6 @@
                                                     .parallax2 {
                                                         height: 90vh;
                                                         background-image: url('img/Parallax_BieneXS.jpg');
-                                                        background-attachment: scroll;
-                                                    }
-                                                    .parallax4 {
-                                                        height: 100vh;
-                                                        background-image: url('img/AmsterdamCanalhouseSM.mp4');
                                                         background-attachment: scroll;
                                                     }
                                                     .parallax-img{
@@ -392,7 +374,7 @@
             <h2>Play with us ...</h2>
             <div class="row align-items-center g-4">
                 <div class="col-sm-6">
-                    <div class="video-wrapper rounded-video loading="lazy"">
+                    <div class="video-wrapper rounded-video" loading="lazy">
                         <div class="row g-6">
                             <video id="myVideo"
                                 muted
@@ -424,7 +406,7 @@
         <div class="parallax-section" id="section">
             <div class="parallax-img" id="parallax"></div>
             <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
-                <div class="card-body text-end" >
+                <div class="card-body text-end">
                     <h5 class="card-title">Tasty provisions can't be missing!</h5>
                     <p class="card-text">
                     <p>
@@ -601,7 +583,12 @@
             </ul>
         </div>
         
-        <div class="parallax4" loading="lazy">
+        <div class="parallax4">
+            <video autoplay muted loop playsinline class="bg-video">
+              <source src="img/AmsterdamCanalhouse.mp4" type="video/mp4" media="(min-width: 768px)">
+              <source src="img/AmsterdamCanalhouseSM.mp4" type="video/mp4" media="(max-width: 767px)">
+                  <img src="img/Carousel_26_01_BieneAufDost.jpg" alt="Los Angeles" class="d-block w-100">
+            </video>
             <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
                 <div class="card-body text-end" >
                     <h5 class="card-title">The journey continues!</h5>
@@ -835,7 +822,7 @@
             </button>
         </div>
         
-        <div class="section-dark ps-md-5" id="Photography">
+        <div class="section-dark ps-md-5">
             <h2>Shutter with us ...</h2>
             <div class="container">
                 <div class="text-section text-center" id="slideSection">
