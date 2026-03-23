@@ -5,66 +5,290 @@
         <link rel="icon" type="image/png" href="../img/IolanovaLogo.png">
             <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
                 <meta charset="utf-8">
-                    <meta name="robots" content="noindex,nofollow, noimageindex, nosnippet">
-                    <meta name="robots" content="max-image-preview:none">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <meta name="copyright" content="copyright 2025 Iolanova-Team">
-                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-                            <script src="../JsHelper.js"></script>
-                            <link rel="stylesheet" type="text/css" href="../myDesign.css">
-                                
-                                <style>
-                                    .bg-custom {
-                                        position: relative;
-                                        height: 100vh;
-                                        display: flex;
-                                        background-image: url('../img/Parallax_Biene.jpg');
-                                        background-size: cover;
-                                        background-position: center
-                                        overflow: hidden;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                    }
-                                    
-                                    .frosted-glass {
-                                        background: rgba(255, 255, 255, 0.1);
-                                        backdrop-filter: blur(20px); /* Frosted glass effect */
-                                        border-radius: 12px;
-                                        padding: 5px;
-                                        text-align: center;
-                                        color: #fff;
-                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                        border: 2px solid rgba(255, 255, 255, 0.4);
-                                    }
-                                    
-                                    /* Mobile View */
-                                    @media (max-width: 768px) {
-                                        .bg-custom {
-                                            height: 90vh;
-                                            background-image: url('../img/Parallax_BieneM.jpg');
-                                             }
-                                    }
-                                    
-                                    @media (max-width: 600px) {
-                                        .bg-custom {
-                                            height: 90vh;
-                                            background-image: url('../img/Parallax_BieneSM.jpg');
-                                             }
-                                    }
-                                    
-                                    @media (max-width: 480px) {
-                                        .bg-custom {
-                                            height: 90vh;
-                                            background-image: url('../img/Parallax_BieneXS.jpg');
-                                             }
-                                    }
-
-                                </style>
-    </head>
-    <body data-bs-spy="scroll" data-bs-target=".navbar">
-        <nav class="navbar navbar-expand-sm py-0 bg-secondary-subtle fixed-top">
+                    <meta name="robots" content="nofollow, noimageindex">
+                        <meta name="robots" content="max-image-preview:none">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <meta name="keywords" content="Wirtschaft, Wirkungskette, Lernen, Quiz">
+                                    <meta name="copyright" content="copyright 2025 Iolanova-Team">
+                                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+                                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                                            <script src="../JsHelper.js"></script>
+                                            <link rel="stylesheet" type="text/css" href="../myDesign.css">
+                                                <style>
+                                                    .row.content {
+                                                        height: 1000px
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 767px) {
+                                                        .sidenav {
+                                                            height: auto;
+                                                            padding: 15px;
+                                                        }
+                                                        .row.content {height: auto;}
+                                                    }
+                                                    
+                                                    .glass-navbar {
+                                                        background: rgba(226, 227, 229, 0.1) !important;/
+                                                          backdrop-filter: blur(10px);
+                                                          -webkit-backdrop-filter: blur(20px); /* Safari support */
+                                                        }
+                                                    
+                                                    .frosted-glass {
+                                                        background: rgba(255, 255, 255, 0.1);
+                                                        backdrop-filter: blur(20px);
+                                                        border-radius: 12px;
+                                                        padding: 5px;
+                                                        text-align: center;
+                                                        color: #fff;
+                                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                        border: 2px solid rgba(255, 255, 255, 0.4);
+                                                    }
+                                                    
+                                                    .parallax1 {
+                                                        background-attachment: fixed;
+                                                        background-size: cover;
+                                                        background-position: center;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    @supports (-webkit-touch-callout: none) {
+                                                      /* iOS only */
+                                                      .parallax1 {
+                                                        background-attachment: scroll;
+                                                      }
+                                                    }
+                                                    
+                                                    .parallax2 {
+                                                        background-attachment: fixed;
+                                                        background-size: cover;
+                                                        background-position: center;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    @supports (-webkit-touch-callout: none) {
+                                                      /* iOS only */
+                                                      .parallax2 {
+                                                        background-attachment: scroll;
+                                                      }
+                                                    }
+                                                    
+                                                    .parallax4 {
+                                                        background-attachment: fixed;
+                                                        background-size: cover;
+                                                        background-position: center;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    @supports (-webkit-touch-callout: none) {
+                                                      /* iOS only */
+                                                      .parallax4 {
+                                                        background-attachment: scroll;
+                                                      }
+                                                    }
+                                                    
+                                                    @media (min-width: 1200px) {
+                                                        .parallax1 {
+                                                            height: 80vh;
+                                                            background-image: url('../img/Parallax_Bahnbruecke.jpg');
+                                                        } .parallax2 {
+                                                            height: 100vh;
+                                                            background-image: url('../img/Parallax_Biene.jpg');
+                                                        } .parallax4 {
+                                                            height: 100vh;
+                                                            background-image: url('../img/AmsterdamCanalhouse.mp4');
+                                                        } .parallax-img {
+                                                            height: 100vh;
+                                                            background-image: url('../img/Parallax_Nektaraffenland.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    @media (max-width: 1199px) {
+                                                        .parallax1 {
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_BahnbrueckeM.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax2 {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneM.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax4 {
+                                                            height: 70vh;
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax-img{
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_NektaraffenlandM.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    @media (max-width: 768px) {
+                                                        .parallax1 {
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_BahnbrueckeM.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax2 {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneM.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax4 {
+                                                            height: 70vh;
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax-img{
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_NektaraffenlandM.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    @media (max-width: 600px) {
+                                                        .parallax1 {
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_BahnbrueckeSM.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax2 {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneSM.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax4 {
+                                                            height: 70vh;
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax-img{
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_NektaraffenlandSM.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    @media (max-width: 480px) {
+                                                        .parallax1 {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BahnbrueckeXS.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax2 {
+                                                            height: 90vh;
+                                                            background-image: url('../img/Parallax_BieneXS.jpg');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax4 {
+                                                            height: 100vh;
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-attachment: scroll;
+                                                        }
+                                                        .parallax-img{
+                                                            height: 70vh;
+                                                            background-image: url('../img/Parallax_NektaraffenlandXS.jpg');
+                                                        }
+                                                    }
+                                                 
+                                                 .section {
+                                                        height: 150px;
+                                                        margin: 20px 0;
+                                                        background-color: rgba(255, 255, 255, 0.7);
+                                                        padding: 20px;
+                                                        text-align: center;
+                                                    }
+                                                    
+                                                    .section-dark {
+                                                        min-height: 30vh;
+                                                        padding: 20px;
+                                                        margin: 0px;
+                                                    }
+                                                    
+                                                    video {
+                                                        width: 100%;
+                                                        height: auto;
+                                                    }
+                                                    
+                                                    .video-wrapper {
+                                                        opacity: 0;
+                                                        transform: translateY(20px);
+                                                        transition: opacity 1s ease, transform 1s ease;
+                                                    }
+                                                    
+                                                    .video-wrapper.visible {
+                                                        opacity: 1;
+                                                        transform: translateY(0);
+                                                    }
+                                                    
+                                                    .rounded-video {
+                                                        border-radius: 15px;
+                                                        overflow: hidden;
+                                                    }
+                                                    
+                                                    .parallax-section{
+                                                        height:100vh;
+                                                        position:relative;
+                                                        overflow:hidden;
+                                                    }
+                                                    
+                                                    .parallax-img{
+                                                        position:absolute;
+                                                        top:0;
+                                                        left:0;
+                                                        width:100%;
+                                                        height:120%;
+                                                        background-image:url('../img/Parallax_Nektaraffenland.jpg');
+                                                        background-size:cover;
+                                                        background-position:center;
+                                                        transform:translateY(0) scale(1);
+                                                        will-change:transform;
+                                                    }
+                                                    
+                                                    .content{
+                                                        position:relative;
+                                                        z-index:2;
+                                                        color:white;
+                                                        text-align:center;
+                                                        top:40%;
+                                                        font-size:60px;
+                                                        font-weight:bold;
+                                                        text-shadow:0 5px 20px rgba(0,0,0,0.6);
+                                                    }
+                                                    
+                                                    .text-section {
+                                                        overflow: hidden;
+                                                        padding: 40px 0;
+                                                    }
+                                                    
+                                                    .slide-text {
+                                                        transform: translateX(120%);
+                                                        opacity: 0;
+                                                        transition: transform 1.5s ease, opacity 1.5s ease;
+                                                    }
+                                                    
+                                                    .slide-text.visible {
+                                                        transform: translateX(0);
+                                                        opacity: 1;
+                                                    }
+                                                    
+                                                    .speed1 { transition-duration: 1.5s; }
+                                                    .speed2 { transition-duration: 4s; }
+                                                    .speed3 { transition-duration: 6s; }
+                                                    
+                                                    .line1, .line2, .line3 {
+                                                        font-size: 48px;
+                                                    }
+                                                    
+                                                    @media (max-width: 768px) {
+                                                        .line1, .line2, .line3 {
+                                                            font-size: 22px;
+                                                        }
+                                                    }
+                                                </style>
+                                            </head>
+    
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <nav class="navbar navbar-expand-sm py-0 bg-secondary-subtle sticky-top glass-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand mx-1" href="index.html">
                     <h1><img src="../img/IolanovaLogo.png" alt="Iolanova Logo" width="45" height="45" class="d-inline-block align-text-top"></h1></a>
@@ -84,8 +308,16 @@
                                 <li><a class="dropdown-item" href="index.html#HerbVetch">HerbVetch</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link" href="#title">Kreativ</a>
+                            <li class="nav-item dropdown ms-auto">
+                                <a class="nav-link dropdown-toggle " href="#" role="button"  data-bs-toggle="dropdown">Kreativ</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="CreativeDE.html#start">Nach oben ...</a></li>
+                                    <li><a class="dropdown-item" href="CreativeDE.html#Economics">Play with us ...</a></li>
+                                    <li><a class="dropdown-item" href="CreativeDE.html#Jam">Jam with us ...</a></li>
+                                    <li><a class="dropdown-item" href="CreativeDE.html#Baking">Bake with us ...</a></li>
+                                    <li><a class="dropdown-item" href="CreativeDE.html#Photography">Shutter with us ...</a></li>
+                                </ul>
+                            </li>
                         </li>
                         <li class="nav-item ms-auto">
                             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">iolanova Team</a>
@@ -108,7 +340,7 @@
             </div>
         </nav>
         
-        <div class="col-sm-9 p-1" style="margin-top:50px" id="title">
+        <div class="col-sm-9 p-1" style="margin-top:-30px" id="start">
         </div>
         
         <!-- The Modal -->
@@ -150,44 +382,640 @@
             </div>
         </div>
         
-        <!-- Text -->     
-        <div class="container-fluid bg-custom">
-          <div class="card frosted-glass position-absolute bottom-0 end-0 mx-3" style="width: 18rem; margin-bottom: 80px">
-            <div class="card-body text-end" >
-                <h5 class="card-title">Projekte</h5>
-                <p class="card-text">
-                <p>
-                Diese Seite ist im Aufbau und wird laufend mit neuen Inhalten gefüttert.
-                Noch ist nicht viel zu sehen - schau einfach später wieder vorbei ...
-                </p>
-                <p>
-                Es bleibt spannend!
-                </p>
+        <div class="parallax1">
+            <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
+                <div class="card-body text-end" >
+                    <h5 class="card-title">Willkommen auf unserem kreativen Spielplatz ...</h5>
+                    <p class="card-text">
+                    <p>
+                    Hier findest Du eine Auswahl unserer Projekte, die aus Neugier, Kreativität und Leidenschaft entstanden sind.
+                    </p>
+                    <p>
+                    Schau Dich um und genieße die Reise.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
         
-       
+        <div class="section-dark ps-md-5" id="Economics">
+            <h2>Play with us ...</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-sm-6">
+                    <div class="video-wrapper rounded-video loading="lazy"">
+                        <div class="row g-6">
+                            <video id="myVideo"
+                                muted
+                                playsinline
+                                preload="metadata">
+                                <source src="../img/CauseffEcon_Trailer_Website.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-start">
+                    <p>
+                    Jede Spezies nutzt das <b>Spiel zum Lernen</b>.
+                    </p>
+                    <p>
+                    Wir Menschen stecken zum Lernen häufig den Kopf in Bücher und brüten über Theorien. Wäre es statt dessen nicht einfacher, direkt zu testen, welche Aktionen zu welchen Konsequenzen führen?
+                    </p>
+                    <p>
+                   Um Wirtschaft wirklich zu verstehen, sind Wirkungsketten - also Ursachen und ihre Wirkung - der Schlüssel. Dieses Wissen ist nicht nur etwas für "Ökonomie-Nerds" – es ist wie eine <b>echte Superkraft</b>, denn wirklich jede Entscheidung die Du triffst, hat ökonomische Konsequenzen.
+                    </p>
+                    <p>
+                   Tauche ein ins <b>econVerse</b> und hilf unserer Heldin, die richtigen ökonomischen Entscheidungen zu treffen. Teste Deine Entscheidungen. Sieh was passiert. Baue echtes Verständnis auf, während Du mit CauseffEcon spielst.
+                    </p>
+                    <a href="index.html#CauseffEcon">Hier geht's zur CauseffEcon App!</a>
+                </div>
+            </div>
+        </div>
         
-        <!-- Footer -->
-<!--        <div class="container">-->
-            <footer class="py-0 my-0 fixed-bottom bg-secondary-subtle border-top">
-                <ul class="nav justify-content-center pb-0 mb-0">
+        <div class="parallax-section" id="section">
+            <div class="parallax-img" id="parallax"></div>
+            <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
+                <div class="card-body text-end" >
+                    <h5 class="card-title">Leckere Verpflegung darf nicht fehlen!</h5>
+                    <p class="card-text">
+                    <p>
+                    Essen ist mehr als nur Nahrung. Auf unserer Reise verleiht das einfache Vergnügen, köstliche Speisen zu genießen, jedem Moment eine besondere Note.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-dark ps-md-5" id="Jam">
+            <h2>Jam with us ...</h2>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="Jam1" class="container tab-pane active">
+                    <div class="row align-items-center g-4">
+                        <div class="col-sm-3 px-4">
+                            <div id="carousel1" class="carousel slide">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"></button>
+                                </div>
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Recipe_MarmeladeErdbeerminze1.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MarmeladeErdbeerminze3.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MarmeladeErdbeerminze4.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MarmeladeErdbeerminze5.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 4">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 text-start px-4">
+                            <h2>Marmelade mit Erdbeer-Minze (unser neuestes Rezept)</h2>
+                            <p>
+                            3 Teile geeignete Früchte (z. B. Aprikosen, Nektarinen, Pfirsiche), 1 Teil Gelierzucker (3:1), ca. eine Handvoll Erdbeer-Minzblätter
+                            </p>
+                            <p>
+                            Die Früchte putzen und vorbereiten, mit etwas Wasser etwa 10 Minuten kochen, die Erdbeer-Minze hinzufügen und weitere 3 Minuten kochen lassen. Den Gelierzucker hinzufügen und gemäß der Anleitung kochen.
+                            </p>
+                            <p>
+                            Die heiße Marmelade in sterilisierte Gläser füllen und fest verschließen. Schmeckt köstlich auf frischem Toast.
+                            </p>
+                            <a href="index.html#JamCalculator">Erstelle weitere leckere Kreationen mit der Jam Cooking Calculator App!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Jam2" class="container tab-pane">
+                    <div class="row align-items-center g-4">
+                        <div class="col-sm-3 px-4">
+                            <div id="carousel2" class="carousel slide">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"></button>
+                                </div>
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Recipe_ZitronenMacro.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Zitrusfruchtmarmelade01.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Zitrusfruchtmarmelade02.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Zitrusfruchtmarmelade03.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 4">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 text-start px-4">
+                            <h2>Zitrusfrucht-Marmelade (unsere Empfehlung)</h2>
+                            <p>
+                            900 g Orangen, 350 g Zitronen, 450 g Grapefriut, 2,5 l Wasser, 1,4 kg Gelierzucker 1:3
+                            </p>
+                            <p>
+                            Obst gründlich waschen und abschrubben  (unbehandelte Früchte verwenden), Schadhafte Stellen entfernen, mit Wasser aufkochen. Gut 2 Stunden köcheln lassen.
+                            </p>
+                            <p>
+                            Früchte nach und nach herausnehmen, Fruchtfleisch entfernen und zerkleinern, Schalen in feine Streifen schneiden. Alles zurück in das Wasser geben. Zucker hinzufügen, nach Anleitung Gelierprobe machen und heiß in Gläser füllen.
+                            </p>
+                            <a href="index.html#JamCalculator">Erstelle weitere leckere Kreationen mit der Jam Cooking Calculator App!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Jam3" class="container tab-pane fade">
+                    <div class="row align-items-center g-4">
+                        <div class="col-sm-3 px-4">
+                            <div id="carousel3" class="carousel slide">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2"></button>
+                                </div>
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Recipe_Rhabarber1.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Rhabarber2.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_RhabarberMarmelade01.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 3">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 text-start px-4">
+                            <h2>Rhabarber-Marmelade mit Vanille (eine unserer Klassiker)</h2>
+                            <p>
+                            3 Teile Rhabarber (z.B. 1000 g), 1 Teil Gelierzucker (3:1, z.B. 333 g), ca. einen halben TL Bourbon-Vanille
+                            </p>
+                            <p>
+                            Die Früchte putzen und vorbereiten, Bourbon-Vanille und etwas Wasser hinzufügen und etwa 10 Minuten kochen lassen. Den Gelierzucker hinzufügen und gemäß der Anleitung kochen.
+                            </p>
+                            <p>
+                            Die heiße Marmelade in sterilisierte Gläser füllen und fest verschließen. Schmeckt nicht nur auf Brot, Brötchen oder Toast, sondern ist auch super als Marmeladen-Topping auf Keksen.
+                            </p>
+                            <a href="index.html#JamCalculator">Erstelle weitere leckere Kreationen mit der Jam Cooking Calculator App!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <ul class="nav nav-pills mt-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-muted" data-bs-toggle="tab" href="#Jam1">Marmelade mit Erdbeer-Minze</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" data-bs-toggle="tab" href="#Jam2">Zitrusfrucht-Marmelade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" data-bs-toggle="tab" href="#Jam3">Rhabarber-Marmelade mit Vanille</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="parallax4" loading="lazy">
+            <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
+                <div class="card-body text-end" >
+                    <h5 class="card-title">Die Reise geht weiter!</h5>
+                    <p class="card-text">
+                    <p>
+                    ... stell Dir vor, es wäre essbar ...
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-dark ps-md-5" id="Baking">
+            <h2>Bake with us ...</h2>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="Baking1" class="container tab-pane active">
+                    <div class="row align-items-center g-4">
+                        <div class="col-sm-3 px-4">
+                            <div id="carousel4" class="carousel slide">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel4" data-bs-slide-to="3"></button>
+                                </div>
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Recipe_Lebkuchenhaus01.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Lebkuchenhaus_CAD_bemasst.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Lebkuchenhaus_Explosionszeichnung.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_Lebkuchenhaus_Zusammenbau.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 4">
+                                    </div>
+                                    
+                                </div>
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 text-start px-4">
+                            <h2>Unser Amsterdamer Lebkuchen-Grachtenhaus (ein fantastisches Experiment)</h2>
+                            <p>
+                            400 g flüssiger Honig, 120 g Butter, 200 g Rohrohrzucker, 4 Prisen Salz, 4 Eier, 1000 g Mehl, 4 gestr. EL Kakao, 4 gestr. TL Backpulver, 8 gestr. TL Lebkuchengewürz (Zimt, Nelken, Piment, Koriander, Ingwer, Kardamom und Muskatnuss oder Macis)
+                            </p>
+                            <p>
+                            Honig, Butter, brauner Zucker und Salz bei mittlerer Hitze unter Rühren erwärmen, bis sich die Zutaten zu einer Masse aufgelöst und verbunden haben. Etwas abkühlen lassen und dann das Ei unterrühren. Anschließend alle trockenen Zutaten (Mehl Kakao, Backpulver und Lebküchengewürz) mischen und unter die Honigmasse kneten. Teig in Folie wickeln und ca. zwei Stunden kühlen. Einen gewünschten Teil des Teiges auf bemehlter Arbeitsfläche ca. einen halben Zentimeter dick ausrollen (je dicker, desto stabiler die Bauplatten - bei dickeren Bauplatten die Backzeit ggf. anpassen), den Rest weiter kühlen. Formen nach Belieben ausstechebn und auf ein mit Backpapier belegtes Backblech legen.
+                            </p>
+                            <p>
+                            Bei mehreren Blechen, diese nacheinander im Ofen ca. 10-12 Minuten bei 180° Umluft backen. Dann abkühlen lassen, zusammensetzen, nach Belieben verzieren und ... natürlich: GENIEßEN!.
+                            </p>
+                            <a href="index.html#BakingStudio">Lass Dich von weiteren leckeren Rezepten in der Baking Studio App inspirieren!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Baking2" class="container tab-pane fade">
+                    <div class="row align-items-center g-4">
+                        <div class="col-sm-3 px-4">
+                            <div id="carousel5" class="carousel slide">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel5" data-bs-slide-to="3"></button>
+                                </div>
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Recipe_SesamEspressoShortbread.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_SesamEspressoShortbread1.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_SesamEspressoShortbread2.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_SesamWide.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 4">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 text-start px-4">
+                            <h2>Sesam Shortbread</h2>
+                            <p>
+                            Für 25 Kekse: 175 g Mehl, 74 g Butter, 92 g Zucker, 1/2 TL Backpulver, 1 Ei, 22 g Sesam, ca. 14 g Espresso
+                            </p>
+                            <p>
+                            Das Ei mit dem Zucker und der Butter einige Minuten lang mit einem Handmixer cremig rühren. Mehl und andere trockene Zutaten hinzufügen und alles zu einem glatten Teig kneten. Den Teig für ca. 30-60 Minuten kühlen.
+                            </p>
+                            <p>
+                            Den Backofen auf 180°C (350°F) vorheizen.
+                            </p>
+                            <p>
+                            Die Arbeitsfläche mit etwas Mehl bestäuben, den Teig ca. 5 mm dick ausrollen, in gewünschte Streifen schneiden und auf das Backblech legen. Alternativ: Teig direkt auf dem Blech ausrollen und mit einem Teigroller Stücke schneiden. Nach dem Backen in entsprechende Stücke brechen.
+                            </p>
+                            <p>
+                            Ca. 18 Minuten im vorgeheizten Ofen backen. Die Kekse auskühlen lassen ggf. weiter verzieren (z.B. mit Schokolade) und genießen!
+                            </p>
+                            <a href="index.html#BakingStudio">Lass Dich von weiteren leckeren Rezepten in der Baking Studio App inspirieren!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Baking3" class="container tab-pane fade">
+                    <div class="row align-items-center g-4">
+                        <div class="col-sm-3 px-4">
+                            <div id="carousel6" class="carousel slide">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel6" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel6" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel6" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel6" data-bs-slide-to="3"></button>
+                                    <button type="button" data-bs-target="#carousel6" data-bs-slide-to="4"></button>
+                                </div>
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/Recipe_MohnKringel.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MohnStrudelKekse01.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MohnStrudelKekse02.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MohnStrudelKekse03.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 4">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/Recipe_MohnMacro.jpg" class="img-fluid rounded-4 shadow-sm" alt="Gallery Image 4">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 text-start px-4">
+                            <h2>Mohn-Kringel</h2>
+                            <p>
+                            Für 20 Kekse: 120 g Mehl, 75 g Butter, 42 g Zucker, 1 EL Pflanzenmilch, 60 g Mohnback (selbstgemacht)
+                            </p>
+                            <p>
+                            Mehl und Zucker in einer großen Schüssel vermischen. Butter und Pflanzenmilch hinzufügen. Alles zu einem glatten Teig kneten und für ca. 30-60 Minuten kühlen.
+                            </p>
+                            <p>
+                            Den Backofen auf 180°C (350°F) vorheizen.
+                            </p>
+                            <p>
+                            Den Teig auf einem bemehlten Backpapier ca. 3 mm ausrollen, das Mohnback auf den ausgerollten Teig verteilen und den Teig mithilfe des Backpapiers aufrollen. Von der Rolle ca. 1 cm dicke Scheiben schneiden und diese auf das Backblech legen.
+                            </p>
+                            <p>
+                            Ca. 10-12 Minuten im vorgeheizten Ofen backen. Die Kekse auskühlen lassen und genießen!
+                            </p>
+                            <a href="index.html#BakingStudio">Lass Dich von weiteren leckeren Rezepten in der Baking Studio App inspirieren!</a>
+                        </div>
+                    </div>
+                </div>
+                                
+                <ul class="nav nav-pills mt-3" role="tablist">
                     <li class="nav-item">
-                        <a href="mailto:iolanovateam@gmail.com?subject=Feedback" class="nav-link px-2 px-md-4 py-2"><small>Kontakt</small></a>
+                        <a class="nav-link active text-muted" data-bs-toggle="tab" href="#Baking1">Amsterdamer Lebkuchen-Grachtenhaus</a>
                     </li>
                     <li class="nav-item">
-                        <a href="NoticeDE.html#Impressum" class="nav-link px-2 px-md-4 py-2"><small>Impressum</small></a>
+                        <a class="nav-link text-muted" data-bs-toggle="tab" href="#Baking2">Sesam Shortbread</a>
                     </li>
                     <li class="nav-item">
-                        <a href="NoticeDE.html#Datenschutz" class="nav-link px-2 px-md-4 py-2"><small>Datenschutz</small></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="NoticeDE.html#RechtlicheHinweise" class="nav-link px-2 px-md-4 py-2"><small>©2025</small></a>
+                        <a class="nav-link text-muted" data-bs-toggle="tab" href="#Baking3">Mohn-Kringel</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        
+        <div id="Photography"></div>
+        
+        <!-- Carousel -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/Carousel_26_01_BieneAufDost.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/Carousel_26_02_Biene.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/Carousel_26_03_Vergissmeinicht.jpg" alt="New York" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/Carousel_26_04_Balance.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+        <div class="section-dark ps-md-5">
+            <h2>Shutter with us ...</h2>
+            <div class="container">
+                <div class="text-section text-center" id="slideSection">
+                    <div class="slide-text line1 speed1">
+                        A photo a day
+                    </div>
+                    <div class="slide-text line2 speed2">
+                        keeps dementia away.
+                    </div>
+                    <div class="slide-text line3 speed3">
+                        ... und „Klick“!
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="parallax2">
+            <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
+                <div class="card-body text-end" >
+                    <h5 class="card-title">Wir sind noch nicht angekommen!</h5>
+                    <p class="card-text">
+                    <p>
+                    Wenn uns heute etwas begeistert hat, wartet morgen vielleicht schon das Nächste auf Dich.
+                    </p>
+                    <p>
+                    Bleib neugierig, bleib inspiriert – und bleib dran, um zu sehen, was als Nächstes kommt ...
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="py-0 my-0 fixed-bottom bg-secondary-subtle border-top">
+            <ul class="nav justify-content-center pb-0 mb-0">
+                <li class="nav-item">
+                    <a href="mailto:iolanovateam@gmail.com?subject=Feedback" class="nav-link px-2 px-md-4 py-2"><small>Kontakt</small></a>
+                </li>
+                <li class="nav-item">
+                    <a href="NoticeDE.html#Imprint" class="nav-link px-2 px-md-4 py-2"><small>Impressum</small></a>
+                </li>
+                <li class="nav-item">
+                    <a href="NoticeDE.html#PrivacyPolicy" class="nav-link px-2 px-md-4 py-2"><small>Datenschutz</small></a>
+                </li>
+                <li class="nav-item">
+                    <a href="NoticeDE.html#Copyright" class="nav-link px-2 px-md-4 py-2"><small>©2025</small></a>
+                </li>
+            </ul>
         </footer>
-<!--        </div>-->
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                
+                var video = document.getElementById("myVideo");
+                var wrapper = document.querySelector(".video-wrapper");
+                
+                if ("IntersectionObserver" in window) {
+                    
+                    var observer = new IntersectionObserver(function(entries) {
+                        entries.forEach(function(entry) {
+                            
+                            if (entry.intersectionRatio >= 0.8) {
+                                wrapper.classList.add("visible");
+                                video.play();
+                            } else {
+                                video.pause();
+                                wrapper.classList.remove("visible");
+                            }
+                            
+                        });
+                    }, {
+                        threshold: [0, 0.8, 1]
+                    });
+                    
+                    observer.observe(wrapper);
+                    
+                }
+                
+            });
+            
+            var section = document.getElementById("section");
+            var image = document.getElementById("parallax");
+            
+            window.addEventListener("scroll", function(){
+                
+                var rect = section.getBoundingClientRect();
+                var progress = -rect.top / window.innerHeight;
+                
+                progress = Math.max(0, Math.min(1, progress));
+                
+                /* PARALLAX MOVEMENT */
+                
+                var move = progress * 120;
+                
+                /* SUBTLE ZOOM */
+                
+                var zoom = 1 + (progress * 0.5);
+                
+                image.style.transform =
+                "translateY(" + move + "px) scale(" + zoom + ")";
+                
+            });
+            
+            /* detect when text enters viewport */
+            const observer = new IntersectionObserver(entries => {
+                
+                entries.forEach(entry => {
+                    
+                    if(entry.isIntersecting){
+                        entry.target.classList.add("visible");
+                    }
+                    
+                });
+                
+                $(document).ready(function () {
+                    
+                    function isInViewport(elem) {
+                        var elementTop = $(elem).offset().top;
+                        var elementBottom = elementTop + $(elem).outerHeight();
+                        var viewportTop = $(window).scrollTop();
+                        var viewportBottom = viewportTop + $(window).height();
+                        
+                        return elementBottom > viewportTop && elementTop < viewportBottom;
+                    }
+                    
+                    // Add 'visible' class to text when it enters the viewport
+                    function checkVisibility() {
+                        $('.slide-text').each(function () {
+                            if (isInViewport(this)) {
+                                $(this).addClass('visible');
+                            }
+                        });
+                    }
+                    
+                    $(window).on('scroll', function () {
+                        checkVisibility();
+                    });
+                    
+                    checkVisibility();
+                });
+                
+            },{threshold:0.3});
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                
+                const section = document.querySelector("#slideSection");
+                const lines = section.querySelectorAll(".slide-text");
+                
+                const observer = new IntersectionObserver(function(entries, observer) {
+                    
+                    entries.forEach(entry => {
+                        
+                        if (entry.isIntersecting) {
+                            
+                            lines.forEach((line, index) => {
+                                setTimeout(() => {
+                                    line.classList.add("visible");
+                                }, index * 300);
+                            });
+                            
+                            observer.unobserve(section);
+                        }
+                        
+                    });
+                    
+                }, { threshold: 0.3 });
+                
+                observer.observe(section);
+                
+            });
+        </script>
         
     </body>
 </html>
