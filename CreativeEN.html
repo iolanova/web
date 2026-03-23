@@ -25,7 +25,13 @@
                                                     }
                                                     .row.content {height: auto;}
                                                 }
-                                              
+                                                
+                                                .glass-navbar {
+                                                    background: rgba(226, 227, 229, 0.1) !important;
+                                                    backdrop-filter: blur(20px);
+                                                    -webkit-backdrop-filter: blur(20px); /* Safari support */
+                                                    }
+                                                
                                                 .frosted-glass {
                                                     background: rgba(255, 255, 255, 0.1);
                                                     backdrop-filter: blur(20px);
@@ -276,7 +282,7 @@
                                         </head>
     
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-        <nav class="navbar navbar-expand-sm py-0 bg-secondary-subtle fixed-top">
+        <nav class="navbar navbar-expand-sm py-0 bg-secondary-subtle sticky-top glass-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand mx-1" href="index.html">
                     <h1><img src="img/IolanovaLogo.png" alt="Iolanova Logo" width="45" height="45" class="d-inline-block align-text-top"></h1></a>
