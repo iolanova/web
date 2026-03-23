@@ -28,8 +28,8 @@
                                                     }
                                                     
                                                     .glass-navbar {
-                                                        background: rgba(226, 227, 229, 0.1) !important;/
-                                                          backdrop-filter: blur(10px);
+                                                        background: rgba(226, 227, 229, 0.1) !important;
+                                                          backdrop-filter: blur(20px);
                                                           -webkit-backdrop-filter: blur(20px); /* Safari support */
                                                         }
                                                     
@@ -90,13 +90,16 @@
                                                         .parallax1 {
                                                             height: 80vh;
                                                             background-image: url('../img/Parallax_Bahnbruecke.jpg');
-                                                        } .parallax2 {
+                                                        }
+                                                        .parallax2 {
                                                             height: 100vh;
                                                             background-image: url('../img/Parallax_Biene.jpg');
-                                                        } .parallax4 {
+                                                        }
+                                                        .parallax4 {
                                                             height: 100vh;
-                                                            background-image: url('../img/AmsterdamCanalhouse.mp4');
-                                                        } .parallax-img {
+                                                            background-image: url('../img/AmsterdamCanalhouse.mp4'), url('../img/Parallax_Biene.jpg');
+                                                        }
+                                                        .parallax-img {
                                                             height: 100vh;
                                                             background-image: url('../img/Parallax_Nektaraffenland.jpg');
                                                         }
@@ -115,7 +118,7 @@
                                                         }
                                                         .parallax4 {
                                                             height: 70vh;
-                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4'), url('../img/Parallax_BieneM.jpg');
                                                             background-attachment: scroll;
                                                         }
                                                         .parallax-img{
@@ -137,7 +140,7 @@
                                                         }
                                                         .parallax4 {
                                                             height: 70vh;
-                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4'), url('../img/Parallax_BieneM.jpg');
                                                             background-attachment: scroll;
                                                         }
                                                         .parallax-img{
@@ -159,7 +162,7 @@
                                                         }
                                                         .parallax4 {
                                                             height: 70vh;
-                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4'), url('../img/Parallax_BieneSM.jpg');
                                                             background-attachment: scroll;
                                                         }
                                                         .parallax-img{
@@ -181,7 +184,7 @@
                                                         }
                                                         .parallax4 {
                                                             height: 100vh;
-                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4');
+                                                            background-image: url('../img/AmsterdamCanalhouseSM.mp4'), url('../img/Parallax_BieneXS.jpg');
                                                             background-attachment: scroll;
                                                         }
                                                         .parallax-img{
@@ -401,7 +404,7 @@
             <h2>Play with us ...</h2>
             <div class="row align-items-center g-4">
                 <div class="col-sm-6">
-                    <div class="video-wrapper rounded-video loading="lazy"">
+                    <div class="video-wrapper rounded-video">
                         <div class="row g-6">
                             <video id="myVideo"
                                 muted
@@ -610,7 +613,7 @@
             </ul>
         </div>
         
-        <div class="parallax4" loading="lazy">
+        <div class="parallax4">
             <div class="card frosted-glass position-absolute bottom-0 end-0 mx-5" style="width: 18rem; margin-bottom: 80px">
                 <div class="card-body text-end" >
                     <h5 class="card-title">Die Reise geht weiter!</h5>
