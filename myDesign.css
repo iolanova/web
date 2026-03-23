@@ -9,7 +9,6 @@
     --bs-link-color: #eb55ac;
     --bs-link-color-rgb: 234, 84, 173;
     --bs-link-hover-color-rgb: 183, 54, 130;
-    --bs-body-font-weight: 500;
 }
 
 [data-bs-theme=dark] {
@@ -20,7 +19,11 @@
     --bs-link-color: #2cc4c4;
     --bs-link-color-rgb: 44, 196, 196;
     --bs-link-hover-color-rgb: 22, 157, 157;
-    --bs-body-font-weight: 500;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
