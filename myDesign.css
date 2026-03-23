@@ -21,11 +21,6 @@
     --bs-link-hover-color-rgb: 22, 157, 157;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
 a {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: underline;
